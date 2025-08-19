@@ -8,6 +8,8 @@ import About from "./_components/Form/About/About";
 import Marquee from "./_components/Marquee/Marquee";
 import Rooms from "./_components/Rooms/Rooms";
 import Services from "./_components/Services/Services";
+import Video from "./_components/Video/Video";
+import Food from "./_components/FoodandDrink/Food";
 
 export default function Home() {
   return (
@@ -47,6 +49,8 @@ export default function Home() {
       <Marquee/>
       <Rooms/>
       <Services/>
+      <Video/>
+      <Food/>
     </>
   );
 }

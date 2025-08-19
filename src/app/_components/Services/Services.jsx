@@ -11,9 +11,9 @@ import HotelOutlinedIcon from '@mui/icons-material/HotelOutlined';
 
 export default function Services() {
   return <>
-    <div className='container mx-auto my-10 py-10'>
+    <section className='container mx-auto my-10 py-10'>
     
-    <div className="row flex flex-col md:flex-row container mx-auto t">
+    <div className="row flex flex-col md:flex-row container mx-auto ">
         <div className='w-full mx-auto md:w-1/2 mb-6 '>
         <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-3 text-sm mx-auto md:mx-0 '>Hotel Services</h1>
         <h3 className='text-md md:text-5xl text-center  md:text-start font-semibold text-lg'> Get The Best Hotel </h3>
@@ -65,7 +65,7 @@ export default function Services() {
         </div>
         </div>
     </div>
-    </div>
+    </section>
 
     <div className='mx-auto container flex flex-col md:flex-row justify-center text-center text-slate-400'>
         <p className='me-3'>Call Us Today: (+1) 234 567 8910 </p>
