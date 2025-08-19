@@ -10,8 +10,8 @@ export default function Marquee() {
 
   return (
     <>
-      <div className="w-full ">
-        <div className="py-2 bg-[#1f8f6a] rotate-2">
+      <div className="w-full">
+        <div className="py-2 bg-[#1f8f6a] rotate-2 scale-[0.99]">
           <ScrollVelocity
             texts={texts}
             velocity={80}
@@ -21,7 +21,7 @@ export default function Marquee() {
       </div>
 
       <div className="w-full ">
-        <div className="py-2 bg-slate-950 -rotate-5">
+        <div className="py-2 bg-slate-950 -rotate-5 scale-[0.99]">
           <ScrollVelocity
             texts={["Hotel & Resort ✦ Holiday Booking ✦ Luxury Hotel"]}
             velocity={80}

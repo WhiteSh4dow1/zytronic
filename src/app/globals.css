@@ -83,3 +83,19 @@ body {
   width: 20px;
   height: 20px;
 }
+.slick-slider {
+  overflow: hidden; /* يمنع السكرول الأفقي من الصفحة */
+  padding-right: 20px; /* padding بسيط عشان يظهر جزء من الكارت الرابع */
+}
+
+.slick-list {
+  margin: 0 -10px; /* للتحكم في المسافات بين الكروت */
+}
+
+.slick-slide {
+  padding: 0 10px; /* تدي مسافة ثابتة بين الكروت */
+}
+
+.slick-track {
+  padding-right: 100px; /* يظهر جزء من الكارت الرابع */
+}
