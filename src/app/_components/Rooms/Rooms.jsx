@@ -63,7 +63,7 @@ export default function Rooms() {
         <Slider {...settings}>
           {rooms.map((room, index) => (
             <div key={index} className="px-2">
-              <Card sx={{ borderRadius: '10px', position: 'relative' }}>
+              <Card sx={{ borderRadius: '10px', position: 'relative', height:'550px' }}>
                 <CardMedia
                   sx={{ height: 280 }}
                   image={room.image}

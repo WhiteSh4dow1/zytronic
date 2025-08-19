@@ -84,18 +84,36 @@ body {
   height: 20px;
 }
 .slick-slider {
-  overflow: hidden; /* يمنع السكرول الأفقي من الصفحة */
-  padding-right: 20px; /* padding بسيط عشان يظهر جزء من الكارت الرابع */
+  overflow: hidden; 
+  padding-right: 20px; 
 }
 
 .slick-list {
-  margin: 0 -10px; /* للتحكم في المسافات بين الكروت */
+  margin: 0 -10px; 
+  overflow: hidden !important;
 }
 
 .slick-slide {
-  padding: 0 10px; /* تدي مسافة ثابتة بين الكروت */
+  padding: 0 10px; 
 }
 
 .slick-track {
-  padding-right: 100px; /* يظهر جزء من الكارت الرابع */
+  padding-right: 100px; 
+  display: flex !important;
 }
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .layer{
+          background-color: #1f8f6a57;
+          inset: 0;
+          border-radius: 10px;
+          transition: all;
+          opacity: 0;
+        }
+        .layer:hover{
+          opacity: 1;
+        }
