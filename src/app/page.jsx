@@ -5,6 +5,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Form from "./_components/Form/Form";
 import About from "./_components/Form/About/About";
+import Marquee from "./_components/Marquee/Marquee";
+import Rooms from "./_components/Rooms/Rooms";
 
 export default function Home() {
   return (
@@ -41,6 +43,8 @@ export default function Home() {
 
       <Form/>
       <About/>
+      <Marquee/>
+      <Rooms/>
     </>
   );
 }
