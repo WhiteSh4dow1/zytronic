@@ -21,10 +21,10 @@ export default function Rooms() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3.3, // جزء من الرابع
+    slidesToShow: 3.3, 
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "0px", // مهم عشان ميبقاش فيه overflow
+    centerPadding: "0px", 
     arrows: false,
     responsive: [
       {
@@ -58,7 +58,7 @@ export default function Rooms() {
         <h1 className='text-md md:text-5xl'>The Best Luxury Rooms And Suites</h1>
       </div>
 
-      {/* container بتاع السلايدر */}
+      
       <div className="mx-auto container overflow-hidden">
         <Slider {...settings}>
           {rooms.map((room, index) => (
