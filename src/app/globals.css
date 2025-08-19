@@ -75,3 +75,11 @@ body {
   background-color: #707070;
 }
 
+.about-star{
+  color: #314158 ;
+}
+
+.about-circle{
+  width: 20px;
+  height: 20px;
+}

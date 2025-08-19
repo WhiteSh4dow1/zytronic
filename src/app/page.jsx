@@ -4,6 +4,7 @@ import headerImg from "../../public/header.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Form from "./_components/Form/Form";
+import About from "./_components/Form/About/About";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
 
 
       <Form/>
+      <About/>
     </>
   );
 }
