@@ -7,6 +7,7 @@ import Form from "./_components/Form/Form";
 import About from "./_components/Form/About/About";
 import Marquee from "./_components/Marquee/Marquee";
 import Rooms from "./_components/Rooms/Rooms";
+import Services from "./_components/Services/Services";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
       <About/>
       <Marquee/>
       <Rooms/>
+      <Services/>
     </>
   );
 }
