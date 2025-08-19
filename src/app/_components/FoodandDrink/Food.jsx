@@ -25,11 +25,11 @@ export default function Food() {
             <p className='md:text-start text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur error sequi, commodi labore laboriosam dicta fuga ipsa non voluptas eius!</p>
         </div>
         <div className='mb-5'>
-            <h5 className='font-bold text-2xl mb-3 ms-1 md:text-start text-center'> <FontAwesomeIcon icon={faCheck} style={{color:'#1f8f6a'}}/> Free Breakfast, Tea & Coffee</h5>
+            <h5 className='font-bold text-2xl mb-3 ms-1 md:text-start text-center'> <FontAwesomeIcon icon={faCheck} style={{color:'#1f8f6a'}}/> Quality Food & Drink</h5>
             <p className='md:text-start text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur error sequi, commodi labore laboriosam dicta fuga ipsa non voluptas eius!</p>
         </div>
         <div className='mb-5'>
-            <h5 className='font-bold text-2xl mb-3 ms-1 md:text-start text-center'> <FontAwesomeIcon icon={faCheck} style={{color:'#1f8f6a'}}/> Free Breakfast, Tea & Coffee</h5>
+            <h5 className='font-bold text-2xl mb-3 ms-1 md:text-start text-center'> <FontAwesomeIcon icon={faCheck} style={{color:'#1f8f6a'}}/> Restaurant & Bar</h5>
             <p className='md:text-start text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur error sequi, commodi labore laboriosam dicta fuga ipsa non voluptas eius!</p>
         </div>
 
