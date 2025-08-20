@@ -12,6 +12,7 @@ import Video from "./_components/Video/Video";
 import Food from "./_components/FoodandDrink/Food";
 import Offers from "./_components/Offers/Offers";
 import Testimonial from "./_components/Testimonial/Testimonial";
+import Team from "./_components/Team/Team";
 
 export default function Home() {
   return (
@@ -55,6 +56,7 @@ export default function Home() {
       <Food/>
       <Offers/>
       <Testimonial/>
+      <Team/>
     </>
   );
 }

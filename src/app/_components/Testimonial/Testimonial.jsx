@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import foodImg from '@/../public/food.png'
-import profile from '@/../public/profile.png'
 import testimonial1 from '@/../public/testimonialSection.png'
 import testimonial2 from '@/../public/testimonialSection2.png'
 import testimonial3 from '@/../public/testimonialProfile.png'
@@ -24,14 +22,8 @@ export default function Testimonial() {
                 
                 </div>
             </div>
-            
-            
-            
         </div>
-        
-        
-        
-       
+
         </div>
         </div>
 
