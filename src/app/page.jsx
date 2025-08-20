@@ -13,6 +13,7 @@ import Food from "./_components/FoodandDrink/Food";
 import Offers from "./_components/Offers/Offers";
 import Testimonial from "./_components/Testimonial/Testimonial";
 import Team from "./_components/Team/Team";
+import Updates from "./_components/Updates/Updates";
 
 export default function Home() {
   return (
@@ -57,6 +58,7 @@ export default function Home() {
       <Offers/>
       <Testimonial/>
       <Team/>
+      <Updates/>
     </>
   );
 }
