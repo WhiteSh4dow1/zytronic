@@ -47,15 +47,15 @@ export default function Team() {
   })
 
   return <>
-        <section className='container mx-auto my-10  bg-[#1f8f6a] px-10 pb-6'>
-            <div className=' text-center justify-center my-10 py-10'>
+        <section className=' mx-auto my-10  bg-[#1f8f6a] px-14 pb-6 w-full'>
+            <div className=' text-center justify-center mt-10 py-10'>
                 <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-3 text-sm mx-auto my-6 '>Fixyland Staff</h1>
                 <h3 className='text-md md:text-5xl text-center font-semibold text-lg mx-auto mt-5'> Expert Staff Persons </h3>
             </div>
-            <div ref={sliderRef} className="keen-slider ">
-      <div className="keen-slider__slide number-slide1 rounded-xl">
-        <div className='bg-slate-200 pb-5 '>
-        <Image src={staff1} alt='staff1'></Image>
+            <div ref={sliderRef} className="keen-slider container mx-auto">
+      <div className="keen-slider__slide number-slide1 rounded-xl ">
+        <div className=' bg-slate-200 pb-5 '>
+        <Image className='w-[100%]' src={staff1} alt='staff1'></Image>
             <h5 className='mt-3 px-3 text-lg font-bold text-slate-950 py-2'>Michael Dean</h5>
             
             <div className="flex items-center gap-2 px-3 ">
@@ -68,7 +68,7 @@ export default function Team() {
 
       <div className="keen-slider__slide number-slide2 rounded-xl">
         <div className='bg-slate-200 pb-5'>
-        <Image  src={staff2} alt='staff1'></Image>
+        <Image className='w-[100%]' src={staff2} alt='staff1'></Image>
             <h5 className='mt-3 px-3 text-lg font-bold text-slate-950 py-2'>Arnold Taylor</h5>
             
             <div className="flex items-center gap-2 px-3 ">
@@ -81,7 +81,7 @@ export default function Team() {
       </div>
       <div className="keen-slider__slide number-slide3 rounded-xl">
         <div className='bg-slate-200 pb-5'>
-        <Image  src={staff3} alt='staff1'></Image>
+        <Image className='w-[100%]' src={staff3} alt='staff1'></Image>
             <h5 className='mt-3 px-3 text-lg font-bold text-slate-950 py-2'>Micheal Dean</h5>
             
             <div className="flex items-center gap-2 px-3 ">
@@ -93,7 +93,7 @@ export default function Team() {
       </div>
       <div className="keen-slider__slide number-slide4 rounded-lg">
         <div className='bg-slate-200 pb-5'>
-        <Image src={staff1} alt='staff1'></Image>
+        <Image className='w-[100%]' src={staff1} alt='staff1'></Image>
             <h5 className='mt-3 px-3 text-lg font-bold text-slate-950 py-2'>Michael Dean</h5>
             
             <div className="flex items-center gap-2 px-3 ">

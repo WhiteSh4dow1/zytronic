@@ -51,7 +51,7 @@ return <>
         <div ref={sliderRef} className="keen-slider">
           {rooms.map((room, index) => (
             <div key={index} className="keen-slider__slide px-2">
-              <Card sx={{ borderRadius: '10px', position: 'relative', height: '550px' }}>
+              <Card sx={{ borderRadius: '10px', position: 'relative', height: '560px' }}>
                 
                 <CardMedia
                   sx={{ height: 280}}

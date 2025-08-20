@@ -8,10 +8,10 @@ export default function Testimonial() {
   return <>
 <section className='container mx-auto my-10 py-10'>
     
-    <div className="row flex flex-col md:flex-row container mx-auto">
+    <div className="row flex flex-col md:flex-row container mx-auto mb-8">
         
 
-        <div className='w-1/2 mx-auto justify-center container items-center '>
+        <div className='w-1/2 mx-auto justify-center container  items-center '>
         <div className='row flex flex-wrap flex-col md:flex-row '>
         <div className='md:relative top-15'>
             <Image className='w-100 rounded-2xl me-3 ' src={testimonial1} alt='testimonial1'></Image>
