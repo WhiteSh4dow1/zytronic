@@ -16,15 +16,33 @@ import GrassOutlinedIcon from '@mui/icons-material/GrassOutlined';
 export default function Team() {
 
       const [sliderRef] = useKeenSlider({
+    mode: "snap",
     slides: {
       perView: 4,
-      spacing: 18,
+      spacing: 15,
+    },
+    breakpoints: {
+      "(max-width: 1024px)": {
+        slides: { perView: 2, spacing: 15 },
+      },
+      "(max-width: 640px)": {
+        slides: { perView: 1, spacing: 10 },
+      },
     },
   })
       const [sliderRef2] = useKeenSlider({
+    mode: "snap",
     slides: {
       perView: 6,
-      spacing: 18,
+      spacing: 15,
+    },
+    breakpoints: {
+      "(max-width: 1024px)": {
+        slides: { perView: 3, spacing: 15 },
+      },
+      "(max-width: 640px)": {
+        slides: { perView: 3, spacing: 10 },
+      },
     },
   })
 
