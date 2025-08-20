@@ -83,24 +83,8 @@ body {
   width: 20px;
   height: 20px;
 }
-.slick-slider {
-  overflow: hidden; 
-  padding-right: 20px; 
-}
 
-.slick-list {
-  margin: 0 -10px; 
-  overflow: hidden !important;
-}
 
-.slick-slide {
-  padding: 0 10px; 
-}
-
-.slick-track {
-  padding-right: 100px; 
-  display: flex !important;
-}
         img {
           max-width: 100%;
           height: auto;
@@ -116,4 +100,17 @@ body {
         }
         .layer:hover{
           opacity: 1;
+        }
+
+        .offerLayer{
+
+          background-color: rgba(0,0,0,0.4);
+          inset: 0;
+          border-radius: 10px;
+          transition: all 0.5s;
+          opacity: 1;
+          width: 100%;
+        }
+        .offerLayer:hover{
+          background-color: rgba(0,0,0,0.0);
         }

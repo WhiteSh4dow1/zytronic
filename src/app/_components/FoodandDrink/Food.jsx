@@ -2,8 +2,6 @@ import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Typography } from '@mui/material'
 import React from 'react'
-import HotTubOutlinedIcon from '@mui/icons-material/HotTubOutlined';
-import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 import Image from 'next/image';
 import foodImg from '@/../public/food.png'
 import drinkImg from '@/../public/drink.png'
@@ -13,7 +11,7 @@ export default function Food() {
   return <>
     <section className='container mx-auto my-10 py-10'>
     
-    <div className="row flex flex-col md:flex-row container mx-auto t">
+    <div className="row flex flex-col md:flex-row container mx-auto ">
         <div className='w-full mx-auto md:w-1/2 mb-6 '>
         <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-3 text-sm mx-auto md:mx-0 '>Food & Drink</h1>
         <h3 className='text-md md:text-5xl text-center  md:text-start font-semibold text-lg'> Quality Food And Drink </h3>

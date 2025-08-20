@@ -11,38 +11,27 @@ import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 export default function Rooms() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3.3, 
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "0px", 
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
-        }
+
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+    mode: "snap",
+    slides: {
+      perView: 3.3,
+      spacing: 15,
+    },
+    breakpoints: {
+      "(max-width: 1024px)": {
+        slides: { perView: 2, spacing: 15 },
       },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-        }
-      }
-    ]
-  }
+      "(max-width: 640px)": {
+        slides: { perView: 1, spacing: 10 },
+      },
+    },
+  })
 
   const rooms = [
     { title: "Deluxe Rooms", price: "$800 / Night", image: "/Deluxe-Rooms.jpg" },
@@ -58,12 +47,11 @@ export default function Rooms() {
         <h1 className='text-md md:text-5xl'>The Best Luxury Rooms And Suites</h1>
       </div>
 
-      
       <div className="mx-auto container overflow-hidden">
-        <Slider {...settings}>
+        <div ref={sliderRef} className="keen-slider">
           {rooms.map((room, index) => (
-            <div key={index} className="px-2">
-              <Card sx={{ borderRadius: '10px', position: 'relative', height:'550px' }}>
+            <div key={index} className="keen-slider__slide px-2">
+              <Card sx={{ borderRadius: '10px', position: 'relative', height: '550px' }}>
                 <CardMedia
                   sx={{ height: 280 }}
                   image={room.image}
@@ -93,10 +81,8 @@ export default function Rooms() {
               </Card>
             </div>
           ))}
-        </Slider>
+        </div>
       </div>
-
-
     </>
   )
 }

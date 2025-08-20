@@ -10,6 +10,8 @@ import Rooms from "./_components/Rooms/Rooms";
 import Services from "./_components/Services/Services";
 import Video from "./_components/Video/Video";
 import Food from "./_components/FoodandDrink/Food";
+import Offers from "./_components/Offers/Offers";
+import Testimonial from "./_components/Testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -51,6 +53,8 @@ export default function Home() {
       <Services/>
       <Video/>
       <Food/>
+      <Offers/>
+      <Testimonial/>
     </>
   );
 }
