@@ -14,6 +14,7 @@ import Offers from "./_components/Offers/Offers";
 import Testimonial from "./_components/Testimonial/Testimonial";
 import Team from "./_components/Team/Team";
 import Updates from "./_components/Updates/Updates";
+import FollowUs from "./_components/FollowUs/FollowUs";
 
 export default function Home() {
   return (
@@ -59,6 +60,7 @@ export default function Home() {
       <Testimonial/>
       <Team/>
       <Updates/>
+      <FollowUs/>
     </>
   );
 }

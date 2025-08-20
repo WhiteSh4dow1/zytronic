@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Typography } from '@mui/material'
 import React from 'react'
 import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
-import profile from '@/../public/profile.png'
-import fitness from '@/../public/fitness.jpg'
 import HotTubOutlinedIcon from '@mui/icons-material/HotTubOutlined';
 import PoolOutlinedIcon from '@mui/icons-material/PoolOutlined';
 import HotelOutlinedIcon from '@mui/icons-material/HotelOutlined';

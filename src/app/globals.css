@@ -114,3 +114,14 @@ body {
         .offerLayer:hover{
           background-color: rgba(0,0,0,0.0);
         }
+
+
+        .followUs-layer{
+          position: absolute;
+          inset: 0;
+          background-color: rgba(232, 232, 232, 0.765);
+          border-radius: 10px;
+          margin: 20px;
+          /* opacity: 0; */
+          transition: all 0.8s ;
+        }
