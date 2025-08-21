@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   faBehance,
   faFacebook,
@@ -14,7 +14,6 @@ import {
   faArrowRight,
   faBars,
   faMagnifyingGlass,
-  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 
 const pages = [
@@ -64,11 +63,41 @@ const pages = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  // ---- added logic refs & state ----
+  const topbarRef = useRef(null);
+  const navRef = useRef(null);
+  const [navTop, setNavTop] = useState(0);
+  const [navHeight, setNavHeight] = useState(0);
+
+  useEffect(() => {
+    const measure = () => {
+      const topbarH = topbarRef.current?.offsetHeight ?? 0;
+      const y = window.scrollY || 0;
+      setNavTop(Math.max(topbarH - y, 0));          // top = max(height(topbar) - scrollY, 0)
+      setNavHeight(navRef.current?.offsetHeight ?? 0); // spacer height
+    };
+    measure();
+    window.addEventListener("scroll", measure, { passive: true });
+    window.addEventListener("resize", measure);
+    return () => {
+      window.removeEventListener("scroll", measure);
+      window.removeEventListener("resize", measure);
+    };
+  }, []);
+
+  useEffect(() => {
+    // re-measure when mobile menu toggles (height changes)
+    const topbarH = topbarRef.current?.offsetHeight ?? 0;
+    const y = window.scrollY || 0;
+    setNavTop(Math.max(topbarH - y, 0));
+    setNavHeight(navRef.current?.offsetHeight ?? 0);
+  }, [mobileOpen]);
+  // ---- end added logic ----
+
   return (
     <div id="header">
-      
-      
-      <nav className="bg-[#1f8f6a] text-white ">
+      {/* top bar  */}
+      <nav ref={topbarRef} className="bg-[#1f8f6a] text-white ">
         <div className="flex flex-col md:flex-row justify-between items-center w-full p-2 px-4 md:px-10">
           <ul className=" list-outside lg:list-inside list-disc marker:text-[#e6c466] 
   text-xs md:text-sm flex flex-col md:flex-row 
@@ -105,8 +134,12 @@ export default function Navbar() {
         </div>
       </nav>
 
-      
-      <nav className="bg-transparent shadow-sm sticky z-50">
+      {/* second navbar (fixed with dynamic top) */}
+      <nav
+        ref={navRef}
+        className="bg-transparent shadow-sm fixed left-0 w-full z-50 "
+        style={{ top: navTop }}
+      >
         <div className="flex items-center justify-between px-4 ">
           
           <div
@@ -121,7 +154,6 @@ export default function Navbar() {
             </Link>
           </div>
 
-          
           <div className="hidden xl:flex gap-6">
             {pages.map((page) =>
               page.children ? (
@@ -162,41 +194,36 @@ export default function Navbar() {
             )}
           </div>
 
-          
           <div className="flex items-center flex-wrap gap-2 md:gap-3 lg:gap-4 max-w-full">
-  {/* Search Icon */}
-  <FontAwesomeIcon
-    icon={faMagnifyingGlass}
-    className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer"
-  />
+            {/* Search Icon */}
+            <FontAwesomeIcon
+              icon={faMagnifyingGlass}
+              className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer"
+            />
 
-  {/* Menu Icon */}
-  <FontAwesomeIcon
-  icon={faBars}
-  className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer xl:hidden"
-  onClick={() => setMobileOpen(!mobileOpen)}
-/>
+            {/* Menu Icon */}
+            <FontAwesomeIcon
+              icon={faBars}
+              className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer xl:hidden"
+              onClick={() => setMobileOpen(!mobileOpen)}
+            />
 
-
-  {/* Book Your Stay Button */}
-  <button
-    className="bg-[#e6c466] text-black font-bold 
+            {/* Book Your Stay Button */}
+            <button
+              className="bg-[#e6c466] text-black font-bold 
       px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
       rounded-md hover:bg-[#ceac47] transition cursor-pointer 
       text-xs sm:text-sm md:text-base whitespace-nowrap
       max-w-[200px] sm:max-w-[220px] md:max-w-none truncate"
-  >
-    Book Your Stay{" "}
-    <FontAwesomeIcon icon={faArrowRight} className="-rotate-45 ml-1" />
-  </button>
-</div>
-
-
+            >
+              Book Your Stay{" "}
+              <FontAwesomeIcon icon={faArrowRight} className="-rotate-45 ml-1" />
+            </button>
+          </div>
         </div>
 
-        
         {mobileOpen && (
-          <div className="lg:hidden bg-white shadow-md px-4 py-3">
+          <div className="xl:hidden bg-white shadow-md px-4 py-3">
             <ul className="flex flex-col gap-3">
               {pages.map((page) =>
                 page.children ? (
@@ -233,6 +260,9 @@ export default function Navbar() {
           </div>
         )}
       </nav>
+
+      {/* spacer to avoid content being covered by fixed navbar */}
+      <div style={{ height: navHeight }} />
     </div>
   );
 }
