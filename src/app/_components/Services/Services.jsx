@@ -11,7 +11,7 @@ export default function Services() {
   return <>
     <section className='container mx-auto my-10 py-10'>
     
-    <div className="row flex flex-col md:flex-row container lg:mx-auto mx-3">
+    <div className="row flex flex-col md:flex-row container lg:mx-auto px-3 items-center">
         <div className='w-full  md:w-1/2 mb-6 '>
         <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-3 text-sm mx-auto md:mx-0 '>Hotel Services</h1>
         <h3 className='text-md md:text-5xl text-center  md:text-start font-semibold text-lg'> Get The Best Hotel </h3>
