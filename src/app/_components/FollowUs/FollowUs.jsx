@@ -120,6 +120,5 @@ export default function FollowUs() {
     
 </div>
 </section>
-
   </>
 }

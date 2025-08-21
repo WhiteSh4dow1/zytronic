@@ -44,7 +44,7 @@ export default function Rooms() {
     <>
       <div className='my-15 py-15 mx-auto container text-center'>
         <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-4 text-sm text-center mx-auto '>Room Type</h1>
-        <h1 className='text-md md:text-5xl'>The Best Luxury Rooms And Suites</h1>
+        <h1 className='text-lg font-bold md:text-5xl'>The Best Luxury Rooms And Suites</h1>
       </div>
 
       <div className="mx-auto container overflow-hidden">

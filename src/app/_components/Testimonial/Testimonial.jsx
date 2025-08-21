@@ -11,11 +11,11 @@ export default function Testimonial() {
     <div className="row flex flex-col md:flex-row container mx-auto mb-8">
         
 
-        <div className='w-1/2 mx-auto justify-center container  items-center '>
+        <div className='w-1/2 mx-auto justify-center container  items-center me-3'>
         <div className='row flex flex-wrap flex-col md:flex-row '>
         <div className='md:relative top-15'>
             <Image className='w-100 rounded-2xl me-3 ' src={testimonial1} alt='testimonial1'></Image>
-            <div className='md:absolute hidden bottom-10 -right-20 md:flex bg-slate-100 rounded-xl p-1 flex-col'>
+            <div className='md:absolute hidden bottom-10 -right-20 lg:flex bg-slate-100 rounded-xl p-1 flex-col'>
                 
                 <div className='flex flex-row'>
                     <Image className=' rounded-lg  w-50' src={testimonial2} alt='testimonial'></Image>

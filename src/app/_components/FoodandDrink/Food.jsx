@@ -12,7 +12,7 @@ export default function Food() {
     <section className='container mx-auto my-10 py-10'>
     
     <div className="row flex flex-col md:flex-row container mx-auto ">
-        <div className='w-full mx-auto md:w-1/2 mb-6 '>
+        <div className='w-full lg:mx-auto md:w-1/2 mb-6 px-5 '>
         <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-3 text-sm mx-auto md:mx-0 '>Food & Drink</h1>
         <h3 className='text-md md:text-5xl text-center  md:text-start font-semibold text-lg'> Quality Food And Drink </h3>
         <h3 className='text-md md:text-5xl mb-5 text-center  md:text-start font-semibold text-lg'>Your Trip Are Enjoyable</h3>
@@ -41,7 +41,7 @@ export default function Food() {
         <div className='row flex flex-wrap flex-col md:flex-row '>
         <div className='md:relative top-15'>
             <Image className='w-80 rounded-lg me-3 ' src={foodImg} alt='food'></Image>
-            <div className='md:absolute hidden bottom-0 -right-20 md:flex bg-slate-100 rounded-4xl p-3 flex-col'>
+            <div className='md:absolute hidden bottom-0 -right-20 lg:flex bg-slate-100 rounded-4xl p-3 flex-col'>
                 <div className='flex flex-col text-[#1f8f6a] text-center py-2 font-semibold'>
                     <h1>Popular Client</h1>
                 </div>

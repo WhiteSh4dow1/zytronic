@@ -18,18 +18,8 @@ export default function Form() {
   return (
 
     
-        <div className="flex flex-col md:flex-row bg-[#1f8f6a52] backdrop-blur-md shadow-xl rounded-xl relative md:w-[90%] md:left-45 md:bottom-15 p-5 overflow-hidden items-center gap-3">
+        <div className="flex flex-col md:flex-row bg-[#1f8f6a52] backdrop-blur-md shadow-xl rounded-xl lg:relative xl:w-[90%] md:left-45 md:bottom-15 p-5 overflow-hidden items-center gap-3">
 
-      
-    {/* <div className='mr-3'>
-    <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Check-in</label>
-    <input type="date" id="small-input" className="block  p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-  </div>
-    <div className='mr-3'>
-    <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Check-Out</label>
-    <input type="date" id="small-input" className="block  p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-  </div> */}
-    
 
  {/* Date Picker */}
             <FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>

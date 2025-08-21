@@ -43,8 +43,8 @@ const [sliderRef] = useKeenSlider({
 return <>
 <div className='mt-15 py-15 mx-auto container text-center '>
         <h3 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-5 text-sm text-center mx-auto '>Hotel News</h3>
-        <h1 className='text-md md:text-5xl text-center mx-auto mb-3'>Get More Update For</h1>
-        <h2 className='text-md md:text-5xl text-center mx-auto mb-0'>Fixyland</h2>
+        <h1 className='text-xl font-bold md:text-5xl text-center mx-auto mb-3'>Get More Updates For</h1>
+        <h2 className='text-xl font-bold md:text-5xl text-center mx-auto mb-0'>Fixyland</h2>
       </div>
 
       <div className="mx-auto container overflow-hidden mb-10 pb-10 ">

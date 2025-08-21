@@ -24,7 +24,7 @@ export default function Offers() {
                               </Button>
         
         <div className="offerLayer  absolute">
-            <div className='opacity-0 md:opacity-100 md:absolute top-50 left-20'>
+            <div className='opacity-0 lg:opacity-100 md:absolute top-50 left-20'>
             <h3 className=' opacity-0 md:opacity-100 text-lg md:text-4xl font-bold w-[80%] '>Get 30% Off On Hotel Booking</h3>
             <span className='relative bottom-40 left-0'>
             <Typography sx={{ color: '#fff', fontWeight: '600', borderBottom: '2px solid #fff',  textAlign:'center', width:'fit-content' ,margin: { xs: '0 auto', sm: 'unset' } , display:'flex', paddingBlock:2}} >
@@ -44,8 +44,8 @@ export default function Offers() {
                                 Book Now <FontAwesomeIcon icon={faArrowRight} className="-rotate-45 ml-1" />
                               </Button>
         <div className="offerLayer  absolute">
-            <div className='absolute top-50 left-20 opacity-0 md:opacity-100'>
-            <h3 className='text-4xl font-bold w-100 opacity-0 md:opacity-100'>Get 35% Off On Resort Booking</h3>
+            <div className='absolute top-50 left-20 opacity-0 lg:opacity-100'>
+            <h3 className='text-4xl font-bold w-100 opacity-0 lg:opacity-100'>Get 35% Off On Resort Booking</h3>
             <span className='relative bottom-40 left-0'>
             <Typography variant='span' sx={{ color: '#fff', fontWeight: '600', borderBottom: '2px solid #fff',  textAlign:'center', width:'fit-content' ,margin: { xs: '0 auto', sm: 'unset' } , display:'flex', paddingBlock:2}} >
                     35% Off

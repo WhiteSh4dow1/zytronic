@@ -11,8 +11,8 @@ export default function Services() {
   return <>
     <section className='container mx-auto my-10 py-10'>
     
-    <div className="row flex flex-col md:flex-row container mx-auto ">
-        <div className='w-full mx-auto md:w-1/2 mb-6 '>
+    <div className="row flex flex-col md:flex-row container lg:mx-auto mx-3">
+        <div className='w-full  md:w-1/2 mb-6 '>
         <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-3 text-sm mx-auto md:mx-0 '>Hotel Services</h1>
         <h3 className='text-md md:text-5xl text-center  md:text-start font-semibold text-lg'> Get The Best Hotel </h3>
         <h3 className='text-md md:text-5xl mb-5 text-center  md:text-start font-semibold text-lg'>Fixyland Services</h3>
@@ -22,8 +22,8 @@ export default function Services() {
                   </Button>
         </div>
 
-        <div className='w-1/2  '>
-        <div className='row flex flex-wrap'>
+        <div className='md:w-1/2  '>
+        <div className=' flex flex-col md:flex-row flex-wrap '>
         <div className="card me-3  mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/fitness.jpg')] bg-cover bg-bottom  relative" >
         <FitnessCenterOutlinedIcon sx={{fontSize:'60px', marginBottom:3 }}></FitnessCenterOutlinedIcon>
         <Typography sx={{marginBottom:2, fontWeight:'600'}} variant="h5" >Fitness Center</Typography>
@@ -33,7 +33,7 @@ export default function Services() {
         </div>
 
         </div>
-        <div className="card mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/jacuzzi.jpg')] bg-cover bg-bottom  relative" >
+        <div className="card me-3 mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/jacuzzi.jpg')] bg-cover bg-bottom  relative" >
         <HotTubOutlinedIcon sx={{fontSize:'60px', marginBottom:3 }}></HotTubOutlinedIcon>
         <Typography sx={{marginBottom:2, fontWeight:'600'}} variant="h5" >Jacuzzi</Typography>
         <p className='w-80 text-slate-500 group-hover:text-slate-200 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -51,7 +51,7 @@ export default function Services() {
         </div>
 
         </div>
-        <div className="card mt-3  text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/spa.jpg')] bg-cover bg-bottom relative" >
+        <div className="card me-3 mt-3  text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/spa.jpg')] bg-cover bg-bottom relative" >
         <HotelOutlinedIcon sx={{fontSize:'60px', marginBottom:3 }}></HotelOutlinedIcon>
         <Typography sx={{marginBottom:2, fontWeight:'600'}} variant="h5" >SPA Treatments</Typography>
         <p className='w-80 text-slate-500 group-hover:text-slate-200 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>

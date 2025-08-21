@@ -15,6 +15,7 @@ import Testimonial from "./_components/Testimonial/Testimonial";
 import Team from "./_components/Team/Team";
 import Updates from "./_components/Updates/Updates";
 import FollowUs from "./_components/FollowUs/FollowUs";
+import Footer from "./_components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
       <Team/>
       <Updates/>
       <FollowUs/>
+      <Footer/>
     </>
   );
 }

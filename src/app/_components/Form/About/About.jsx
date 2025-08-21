@@ -39,10 +39,10 @@ export default function About() {
         
     </div>
 
-    <Box component={'section'} className='w-1/2 mt-10  font-bold mx-auto'>
+    <Box component={'section'} className='px-5 md:w-1/2 mt-10  font-bold mx-auto'>
     <h1 className='uppercase text-[#1f8f6a] bg-slate-200 w-fit p-1 px-2 rounded-md font-semibold mb-3 text-sm'>About Fixyland</h1>
-    <h3 className='text-md md:text-5xl'> World Class Luxury Hotel </h3>
-    <h3 className='text-md md:text-5xl mb-5'>and Resort Near City</h3>
+    <h3 className='text-lg font-bold md:text-5xl'> World Class Luxury Hotel </h3>
+    <h3 className='text-lg font-bold md:text-5xl mb-5'>and Resort Near City</h3>
     <p>There are many variations of Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit sapiente mollitia incidunt ipsam neque magni dolores nisi dolor? Beatae Lorem ipsum dolor sit amet consectetur.</p>
     
 

@@ -70,7 +70,7 @@ export default function Navbar() {
       
       <nav className="bg-[#1f8f6a] text-white ">
         <div className="flex flex-col md:flex-row justify-between items-center w-full p-2 px-4 md:px-10">
-          <ul className="ist-outside md:list-inside list-disc marker:text-[#e6c466] 
+          <ul className=" list-outside lg:list-inside list-disc marker:text-[#e6c466] 
   text-xs md:text-sm flex flex-col md:flex-row 
   gap-2 md:gap-6 text-center md:text-left">
             <li>

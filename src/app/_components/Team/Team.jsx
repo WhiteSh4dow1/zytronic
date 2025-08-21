@@ -38,7 +38,7 @@ export default function Team() {
     },
     breakpoints: {
       "(max-width: 1024px)": {
-        slides: { perView: 3, spacing: 15 },
+        slides: { perView: 4, spacing: 15 },
       },
       "(max-width: 640px)": {
         slides: { perView: 3, spacing: 10 },

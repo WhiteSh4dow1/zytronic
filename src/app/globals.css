@@ -58,7 +58,7 @@ body {
 .btn-yellow{
   background-color: #e6c466;
   transition: all 0.5s;
-  @apply p-4 px-5 rounded-2xl text-black font-semibold hover:cursor-pointer
+  @apply p-2 xl:p-4 px-3 xl:px-5 rounded-2xl text-black font-semibold hover:cursor-pointer
 }
 .btn-yellow:hover{
   color: white;
@@ -68,7 +68,7 @@ body {
 .btn-white{
   transition: all 0.5s;
   background-color: white;
-  @apply p-4 px-5 rounded-2xl text-black font-semibold hover:cursor-pointer
+  @apply p-2 xl:p-4 px-3 xl:px-5 rounded-2xl text-black font-semibold hover:cursor-pointer
 }
 .btn-white:hover{
   color: white;
@@ -125,3 +125,4 @@ body {
           /* opacity: 0; */
           transition: all 0.8s ;
         }
+        
