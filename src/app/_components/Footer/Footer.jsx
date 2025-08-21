@@ -28,11 +28,11 @@ export default function Footer() {
             <p className="w-full md:w-[80%] mb-4 text-slate-400">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet assumenda ut quae officiis harum.
             </p>
-            <div className="flex gap-3">
-              <FontAwesomeIcon icon={faFacebook} className="bg-gray-900 p-3" />
-              <FontAwesomeIcon icon={faXTwitter} className="bg-gray-900 p-3" />
-              <FontAwesomeIcon icon={faInstagram} className="bg-gray-900 p-3" />
-              <FontAwesomeIcon icon={faBehance} className="bg-gray-900 p-3" />
+            <div className="flex gap-3 group">
+              <Link href={''}><FontAwesomeIcon icon={faFacebook} className="bg-gray-900 p-3 rounded-md hover:bg-gray-700 transition-all 0.5s" /></Link>
+              <Link href={''}><FontAwesomeIcon icon={faXTwitter} className="bg-gray-900 p-3 rounded-md hover:bg-gray-700 transition-all 0.5s" /></Link>
+              <Link href={''}><FontAwesomeIcon icon={faInstagram} className="bg-gray-900 p-3 rounded-md hover:bg-gray-700 transition-all 0.5s" /></Link>
+              <Link href={''}><FontAwesomeIcon icon={faBehance} className="bg-gray-900 p-3 rounded-md hover:bg-gray-700 transition-all 0.5s" /></Link>
             </div>
           </div>
 

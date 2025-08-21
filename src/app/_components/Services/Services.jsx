@@ -23,38 +23,38 @@ export default function Services() {
         </div>
 
         <div className='md:w-1/2  '>
-        <div className=' flex flex-col md:flex-row flex-wrap '>
-        <div className="card me-3  mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/fitness.jpg')] bg-cover bg-bottom  relative" >
+        <div className=' flex flex-col md:flex-row flex-wrap  '>
+        <div className="card me-3  mt-3 text-slate-950 bg-slate-200 p-3  rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all   hover:bg-[url('/fitness.jpg')] bg-cover bg-bottom  relative" >
         <FitnessCenterOutlinedIcon sx={{fontSize:'60px', marginBottom:3 }}></FitnessCenterOutlinedIcon>
         <Typography sx={{marginBottom:2, fontWeight:'600'}} variant="h5" >Fitness Center</Typography>
-        <p className='w-80 text-slate-500 group-hover:text-slate-200 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p className='w-80 text-slate-500  group-hover:text-slate-100'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <div className='absolute layer'>
 
         </div>
 
         </div>
-        <div className="card me-3 mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/jacuzzi.jpg')] bg-cover bg-bottom  relative" >
+        <div className="card me-3 mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all  hover:bg-[url('/jacuzzi.jpg')] bg-cover bg-bottom  relative" >
         <HotTubOutlinedIcon sx={{fontSize:'60px', marginBottom:3 }}></HotTubOutlinedIcon>
         <Typography sx={{marginBottom:2, fontWeight:'600'}} variant="h5" >Jacuzzi</Typography>
-        <p className='w-80 text-slate-500 group-hover:text-slate-200 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p className='w-80 text-slate-500 group-hover:text-slate-100 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <div className='absolute layer'>
 
         </div>
 
         </div>
-        <div className="card me-3 mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/swimming.jpg')] bg-cover bg-bottom  relative" >
+        <div className="card me-3 mt-3 text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all  hover:bg-[url('/swimming.jpg')] bg-cover bg-bottom  relative" >
         <PoolOutlinedIcon sx={{fontSize:'60px', marginBottom:3 }}></PoolOutlinedIcon>
         <Typography sx={{marginBottom:2, fontWeight:'600'}} variant="h5" >Swimming Pool</Typography>
-        <p className='w-80 text-slate-500 group-hover:text-slate-200 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p className='w-80 text-slate-500 group-hover:text-slate-100 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <div className='absolute layer'>
 
         </div>
 
         </div>
-        <div className="card me-3 mt-3  text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all delay-75  hover:bg-[url('/spa.jpg')] bg-cover bg-bottom relative" >
+        <div className="card me-3 mt-3  text-slate-950 bg-slate-200 p-3 rounded-3xl px-4 py-10 hover:bg-[#1f8f6a] hover:text-slate-200 group transition-all  hover:bg-[url('/spa.jpg')] bg-cover bg-bottom relative" >
         <HotelOutlinedIcon sx={{fontSize:'60px', marginBottom:3 }}></HotelOutlinedIcon>
         <Typography sx={{marginBottom:2, fontWeight:'600'}} variant="h5" >SPA Treatments</Typography>
-        <p className='w-80 text-slate-500 group-hover:text-slate-200 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p className='w-80 text-slate-500 group-hover:text-slate-100 '>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <div className='absolute layer'>
 
         </div>

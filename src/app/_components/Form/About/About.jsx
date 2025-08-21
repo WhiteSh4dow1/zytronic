@@ -12,9 +12,9 @@ export default function About() {
   return <>
   <section className='my-10'>
     <div className="container flex  flex-col md:flex-row  mx-auto ">
-        <div className='md:w-1/2 w-full'>
+        <div className='md:w-1/2 w-full mx-auto text-center'>
             <div className='relative inline-block rounded-2xl '>
-        <Image src={aboutImg} alt='about-section' className='rounded-2xl w-100 '></Image>
+        <Image src={aboutImg} alt='about-section' className='rounded-2xl w-90 lg:w-100 '></Image>
         <span className="pointer-events-none absolute bottom-0 right-0 w-[70px] h-[70px]
                [clip-path:polygon(100%_0,0_100%,100%_100%)]
                bg-[#0a0a0a]"></span>

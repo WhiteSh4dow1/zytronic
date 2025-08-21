@@ -94,7 +94,7 @@ body {
         .layer{
           background-color: #1f8f6a57;
           inset: 0;
-          border-radius: 10px;
+          border-radius: 20px;
           transition: all;
           opacity: 0;
         }
