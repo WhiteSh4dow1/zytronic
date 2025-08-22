@@ -15,7 +15,7 @@ import {
   faBars,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-import { IconButton } from "@mui/material";
+import { IconButton, useTheme } from "@mui/material";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useCustomTheme } from "../../../../ThemeProviderWrapper";
@@ -66,6 +66,7 @@ const pages = [
 ];
 
 export default function Navbar() {
+    const theme = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
 
     const { darkMode, toggleTheme } = useCustomTheme();
@@ -145,7 +146,8 @@ export default function Navbar() {
       <nav
         ref={navRef}
         className="bg-transparent shadow-sm fixed left-0 w-full z-50 "
-        style={{ top: navTop }}
+        style={{ top: navTop ,backgroundColor:theme.palette.mode === "light" ? "#000" : "transparent" }}
+        
       >
         <div className="flex items-center justify-between px-4 ">
           
@@ -165,7 +167,7 @@ export default function Navbar() {
   {pages.map((page) =>
     page.children ? (
       <div key={page.name} className="relative group">
-        <button
+        <button style={{color:theme.palette.mode === "light" ? "#fff" : "#fff"}}
           className={`cursor-pointer flex items-center font-black text-lg hover:text-[#1f8f6a] transition ${
             darkMode ? "text-slate-100" : "text-black"
           }`}
@@ -194,7 +196,7 @@ export default function Navbar() {
         </div>
       </div>
     ) : (
-      <Link
+      <Link style={{color:theme.palette.mode === "light" ? "#fff" : "#fff"}}
         key={page.name}
         href={page.href}
         className={`cursor-pointer flex items-center text-lg font-black hover:text-[#1f8f6a] transition ${
