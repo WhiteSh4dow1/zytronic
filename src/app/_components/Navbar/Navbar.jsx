@@ -15,6 +15,11 @@ import {
   faBars,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import { IconButton } from "@mui/material";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { useCustomTheme } from "../../../../ThemeProviderWrapper";
+
 
 const pages = [
   {
@@ -62,6 +67,8 @@ const pages = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+    const { darkMode, toggleTheme } = useCustomTheme();
 
   // ---- added logic refs & state ----
   const topbarRef = useRef(null);
@@ -198,16 +205,25 @@ export default function Navbar() {
             {/* Search Icon */}
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
-              className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer"
+              className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer text-slate-200"
             />
 
             {/* Menu Icon */}
-            <FontAwesomeIcon
+            <FontAwesomeIcon 
               icon={faBars}
-              className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer xl:hidden"
+              className="bg-[#69696967] p-2 sm:p-3 rounded-full cursor-pointer xl:hidden text-slate-200"
               onClick={() => setMobileOpen(!mobileOpen)}
             />
-
+            <IconButton sx={{backgroundColor:'#69696967'}}
+    onClick={toggleTheme}
+    className="bg-[#69696967] p-2 sm:p-3 rounded-full"
+  >
+    {darkMode ? (
+      <LightModeIcon sx={{ color: "white"}} />
+    ) : (
+      <DarkModeIcon sx={{ color: "white"}} />
+    )}
+  </IconButton>
             {/* Book Your Stay Button */}
             <button
               className="bg-[#e6c466] text-black font-bold 

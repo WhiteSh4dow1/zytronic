@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar/Navbar";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import ThemeProviderWrapper from "../../ThemeProviderWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +25,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+            <ThemeProviderWrapper>
         <Navbar/>
            <AppRouterCacheProvider>
+
         {children}
         </AppRouterCacheProvider>
+            </ThemeProviderWrapper>
       </body>
     </html>
   );

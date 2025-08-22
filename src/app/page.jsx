@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-import headerImg from "../../public/header.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Form from "./_components/Form/Form";
@@ -17,19 +15,20 @@ import Updates from "./_components/Updates/Updates";
 import FollowUs from "./_components/FollowUs/FollowUs";
 import Footer from "./_components/Footer/Footer";
 
+
 export default function Home() {
   return (
     <>
       <div className="header-layer text-center px-4 py-8 ">
         {/* Heading */}
-        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-10">
+        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-10 text-slate-200">
           <h1>Book With Best</h1>
           <span className="main-yellow block mt-1">Luxury Hotel</span>
         </div>
 
         {/* Paragraph */}
         <div>
-          <p className="text-sm sm:text-base md:text-lg mt-4 font-light max-w-2xl text-center mx-auto">
+          <p className="text-sm sm:text-base md:text-lg mt-4 font-light max-w-2xl text-center mx-auto text-slate-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at
             possimus molestias natus, eligendi quaerat dolore voluptate.
           </p>

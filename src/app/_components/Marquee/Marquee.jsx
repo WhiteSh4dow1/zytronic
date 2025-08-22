@@ -15,7 +15,7 @@ export default function Marquee() {
           <ScrollVelocity
             texts={texts}
             velocity={80}
-            className="custom-scroll-text"
+            className="text-slate-200"
           />
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function Marquee() {
           <ScrollVelocity
             texts={["Hotel & Resort ✦ Holiday Booking ✦ Luxury Hotel"]}
             velocity={80}
-            className="custom-scroll-text"
+            className="text-slate-200"
           />
         </div>
       </div>

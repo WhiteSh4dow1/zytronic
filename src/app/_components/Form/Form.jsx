@@ -22,7 +22,7 @@ export default function Form() {
 
 
  {/* Date Picker */}
-            <FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>
+            <FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
               <label htmlFor="">Check-in</label>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
@@ -40,7 +40,7 @@ export default function Form() {
       </LocalizationProvider>
             </FormControl>
 
-            <FormControl sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>
+            <FormControl sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
               <label htmlFor="">Check-Out</label>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
@@ -50,7 +50,7 @@ export default function Form() {
           slotProps={{
             textField: {
               sx: {
-                bgcolor: "white", // خلفية بيضاء
+                bgcolor: "white", 
               },
             },
           }}
@@ -59,36 +59,47 @@ export default function Form() {
             </FormControl>
 
 
-<FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>
+<FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
     <label htmlFor="">Room</label>
-      {/* <InputLabel variant="outlined" sx={{color:'white'}} id="room-label">Room</InputLabel> */}
+      
       <Select
-      sx={{bgcolor:'white', px:1}}
-        labelId="room-label"
-        id="room-select"
-        value={room}
-        onChange={(e) => setRoom(e.target.value)}
-        MenuProps={{
-          PaperProps: {
-            sx: {
-              backgroundColor: "white", 
-              color: "black",           
-            },
-          },
-        }}
-      >
-        
-        <MenuItem value={1}>Room 1</MenuItem>
-        <MenuItem value={2}>Room 2</MenuItem>
-        <MenuItem value={3}>Room 3</MenuItem>
-      </Select>
+  sx={{
+    bgcolor: 'white',
+    px: 1,
+    color: '#000',
+    '& .MuiSelect-icon': {
+      color: '#000 !important', //drop-down-menu
+    },
+  }}
+  value={room}
+  onChange={(e) => setRoom(e.target.value)}
+  MenuProps={{
+    PaperProps: {
+      sx: {
+        backgroundColor: "white",
+        color: "black",
+      },
+    },
+  }}
+>
+  <MenuItem value={1}>Room 1</MenuItem>
+  <MenuItem value={2}>Room 2</MenuItem>
+  <MenuItem value={3}>Room 3</MenuItem>
+</Select>
     </FormControl>
 
-<FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>
+<FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
     <label htmlFor="">Adults</label>
-      {/* <InputLabel variant="outlined" sx={{color:'white'}} id="room-label">Room</InputLabel> */}
+      
       <Select
-      sx={{bgcolor:'white', px:1}}
+      sx={{
+    bgcolor: 'white',
+    px: 1,
+    color: '#000',
+    '& .MuiSelect-icon': {
+      color: '#000 !important', //drop-down-menu
+    },
+  }}
         labelId="room-label"
         id="room-select"
         value={adults}
@@ -109,11 +120,18 @@ export default function Form() {
       </Select>
     </FormControl>
 
-<FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>
+<FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
     <label htmlFor="">Children</label>
-      {/* <InputLabel variant="outlined" sx={{color:'white'}} id="room-label">Room</InputLabel> */}
+      
       <Select
-      sx={{bgcolor:'white', px:1}}
+      sx={{
+    bgcolor: 'white',
+    px: 1,
+    color: '#000',
+    '& .MuiSelect-icon': {
+      color: '#000 !important', //drop-down-menu
+    },
+  }}
         labelId="room-label"
         id="room-select"
         value={children}
