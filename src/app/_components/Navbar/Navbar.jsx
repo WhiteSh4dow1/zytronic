@@ -162,44 +162,51 @@ export default function Navbar() {
           </div>
 
           <div className="hidden xl:flex gap-6">
-            {pages.map((page) =>
-              page.children ? (
-                <div key={page.name} className="relative group">
-                  <button className="flex items-center text-slate-100 font-medium hover:text-[#1f8f6a] transition">
-                    {page.name}
-                    <ArrowDropDownIcon />
-                  </button>
-                  {/* Dropdown */}
-                  <div
-                    className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg rounded-lg opacity-0 invisible 
-                               group-hover:opacity-100 group-hover:visible
-                               transition-all duration-300 ease-in-out"
-                  >
-                    <ul className="flex flex-col py-2">
-                      {page.children.map((sub) => (
-                        <li key={sub.name}>
-                          <Link
-                            href={sub.href}
-                            className="block px-4 py-2 hover:bg-gray-100 transition"
-                          >
-                            {sub.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ) : (
+  {pages.map((page) =>
+    page.children ? (
+      <div key={page.name} className="relative group">
+        <button
+          className={`cursor-pointer flex items-center font-black text-lg hover:text-[#1f8f6a] transition ${
+            darkMode ? "text-slate-100" : "text-black"
+          }`}
+        >
+          {page.name}
+          <ArrowDropDownIcon />
+        </button>
+        {/* Dropdown */}
+        <div
+          className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg rounded-lg opacity-0 invisible 
+                     group-hover:opacity-100 group-hover:visible
+                     transition-all duration-300 ease-in-out"
+        >
+          <ul className="flex flex-col py-2">
+            {page.children.map((sub) => (
+              <li key={sub.name}>
                 <Link
-                  key={page.name}
-                  href={page.href}
-                  className="text-slate-100 font-medium hover:text-[#1f8f6a] transition"
+                  href={sub.href}
+                  className="block px-4 py-2 hover:bg-gray-100 transition"
                 >
-                  {page.name}
+                  {sub.name}
                 </Link>
-              )
-            )}
-          </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    ) : (
+      <Link
+        key={page.name}
+        href={page.href}
+        className={`cursor-pointer flex items-center text-lg font-black hover:text-[#1f8f6a] transition ${
+          darkMode ? "text-slate-100" : "text-black"
+        }`}
+      >
+        {page.name}
+      </Link>
+    )
+  )}
+</div>
+
 
           <div className="flex items-center flex-wrap gap-2 md:gap-3 lg:gap-4 max-w-full">
             {/* Search Icon */}
@@ -230,7 +237,9 @@ export default function Navbar() {
       px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
       rounded-md hover:bg-[#ceac47] transition cursor-pointer 
       text-xs sm:text-sm md:text-base whitespace-nowrap
-      max-w-[200px] sm:max-w-[220px] md:max-w-none truncate"
+      max-w-[200px] sm:max-w-[220px] md:max-w-none truncate
+      hidden lg:block
+      "
             >
               Book Your Stay{" "}
               <FontAwesomeIcon icon={faArrowRight} className="-rotate-45 ml-1" />

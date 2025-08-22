@@ -51,7 +51,7 @@ return <>
         <div ref={sliderRef} className="keen-slider">
           {rooms.map((room, index) => (
             <div key={index} className="keen-slider__slide px-2">
-              <Card sx={{ borderRadius: '10px', position: 'relative', height: '560px' }}>
+              <Card sx={{ borderRadius: '10px', position: 'relative',pb:5 }}>
                 
                 <CardMedia
                   sx={{ height: 280}}
@@ -70,8 +70,8 @@ return <>
                 
 
                 <div className='text-start ms-2 text-slate-500 mb-2'>
-                  <p className='mb-3'>There are many variations of passengers of Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                  <Button sx={{ color: '#fff', fontWeight: '600', borderBottom: '2px solid #1f8f6a',bgcolor:'#1f8f6a', px:3, py:1 }} variant="contained">
+                  <p className='mb-3 px-3'>There are many variations of passengers of Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <Button sx={{ color: '#fff', fontWeight: '600', borderBottom: '2px solid #1f8f6a',bgcolor:'#1f8f6a', px:3, py:1, ml:1 }} variant="contained">
                     Read More <FontAwesomeIcon icon={faArrowRight} className="-rotate-45 ml-1" />
                   </Button>
                 </div>
