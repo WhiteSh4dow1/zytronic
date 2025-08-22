@@ -100,7 +100,7 @@ export default function Footer() {
             </Link>
             <TelegramIcon sx={{ color: "#fff" }} />
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center mt-3">
             <p style={{ color: "#aaa" }}>
               <CheckCircleIcon sx={{ fontSize: "18px", color: "#fff" }} /> I agree
               to all terms and policies
@@ -117,9 +117,9 @@ export default function Footer() {
           </div>
           <div className="text-center flex md:flex-row flex-col items-center">
             <Link className="mb-3 md:mx-3" style={{ color: "#aaa" }} href="">
-              Terms and Conditions <span className="mx-3 md:border-1"></span>
+              Terms and Conditions <span className="md:mx-3 md:border-1"></span>
             </Link>
-            <Link className="mb-3" style={{ color: "#aaa" }} href="">
+            <Link className="mb-3 " style={{ color: "#aaa" }} href="">
               Privacy Policy
             </Link>
           </div>
