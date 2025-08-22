@@ -19,23 +19,23 @@ import Footer from "./_components/Footer/Footer";
 export default function Home() {
   return (
     <>
-      <div className="header-layer text-center px-0 py-8 ">
+      <div className="header-layer text-center px-4 py-8 w-[60%] md:w-full">
         {/* Heading */}
-        <div className=" text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-10 text-slate-200">
+        <div className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-10 text-slate-200">
           <h1>Book With Best</h1>
           <span className="main-yellow block mt-1">Luxury Hotel</span>
         </div>
 
         {/* Paragraph */}
         <div>
-          <p className="text-xl w-full md:text-lg mt-4 font-light  text-center mx-auto text-slate-200">
+          <p className="text-lg sm:text-base md:text-lg mt-4 font-light max-w-2xl text-center mx-auto text-slate-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at
             possimus molestias natus, eligendi quaerat dolore voluptate.
           </p>
         </div>
 
         {/* Buttons */}
-        <div className="mt-5 flex flex-col sm:flex-row justify-center gap-3 w-fit mx-auto text-center">
+        <div className="mt-5 flex flex-col sm:flex-row justify-center gap-3 w-fit mx-auto">
           <button className="btn-yellow flex items-center justify-center gap-2">
             Explore Now
             <FontAwesomeIcon icon={faArrowRight} className="-rotate-45" />
