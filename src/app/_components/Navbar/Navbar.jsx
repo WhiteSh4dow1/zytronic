@@ -240,7 +240,7 @@ export default function Navbar() {
       rounded-md hover:bg-[#ceac47] transition cursor-pointer 
       text-xs sm:text-sm md:text-base whitespace-nowrap
       max-w-[200px] sm:max-w-[220px] md:max-w-none truncate
-      hidden lg:block
+      hidden 2xl:block
       "
             >
               Book Your Stay{" "}
