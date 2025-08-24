@@ -18,7 +18,7 @@ export default function Form() {
   return (
 
     
-        <div className="flex flex-col md:flex-row bg-[#1f8f6a52] backdrop-blur-md shadow-xl rounded-xl lg:relative xl:w-[90%] 2xl:left-50 xl:left-35 md:left-0 md:bottom-15 p-5 overflow-hidden items-center gap-3">
+        <div className="flex flex-col md:flex-row bg-[#1f8f6a52] backdrop-blur-md shadow-xl rounded-xl mx-auto mr-0  xl:w-[90%] lg:relative md:bottom-15 p-5 overflow-hidden items-center gap-3">
 
 
  {/* Date Picker */}
