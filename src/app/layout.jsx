@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Zytronic Assessment",
+  title: "Zytronic",
   description: "Developed By Shady Medhat",
 };
 
