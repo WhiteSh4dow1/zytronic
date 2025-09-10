@@ -22,41 +22,58 @@ export default function Form() {
 
 
  {/* Date Picker */}
-            <FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
-              <label htmlFor="">Check-in</label>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DatePicker
-        //   label="Choose Date"
-          value={date}
-          onChange={(newValue) => setDate(newValue)}
-          slotProps={{
-            textField: {
-              sx: {
-                bgcolor: "white", 
-              },
+            <FormControl sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>
+  <label htmlFor="" style={{ color: "#fff" }}>Check-in</label>
+  <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <DatePicker
+      value={date}
+      onChange={(newValue) => setDate(newValue)}
+      slotProps={{
+        textField: {
+          sx: (theme) => ({ // <---  theme   
+            bgcolor: theme.palette.mode === "light" ? "white" : "transparent",
+            "& input": {
+              color: theme.palette.mode === "dark" ? "#fff" : "#000",
             },
-          }}
-        />
-      </LocalizationProvider>
-            </FormControl>
+            "& .MuiSvgIcon-root": {
+              color: theme.palette.mode === "dark" ? "#fff" : "rgba(0, 0, 0, 0.54)",
+            },
+            "& .MuiInputLabel-root": {
+              color: theme.palette.mode === "dark" ? "#fff" : "#000",
+            },
+          }),
+        },
+      }}
+    />
+  </LocalizationProvider>
+</FormControl>
 
-            <FormControl sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
-              <label htmlFor="">Check-Out</label>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DatePicker
-        //   label="Choose Date"
-          value={date}
-          onChange={(newValue) => setDate(newValue)}
-          slotProps={{
-            textField: {
-              sx: {
-                bgcolor: "white", 
-              },
+
+            <FormControl sx={{ mr: 2, width: { xs: "100%", md: "auto" } }}>
+  <label htmlFor="" style={{ color: "#fff" }}>Check-Out</label>
+  <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <DatePicker
+      value={date}
+      onChange={(newValue) => setDate(newValue)}
+      slotProps={{
+        textField: {
+          sx: (theme) => ({ // <---  theme   
+            bgcolor: theme.palette.mode === "light" ? "white" : "transparent",
+            "& input": {
+              color: theme.palette.mode === "dark" ? "#fff" : "#000",
             },
-          }}
-        />
-      </LocalizationProvider>
-            </FormControl>
+            "& .MuiSvgIcon-root": {
+              color: theme.palette.mode === "dark" ? "#fff" : "rgba(0, 0, 0, 0.54)",
+            },
+            "& .MuiInputLabel-root": {
+              color: theme.palette.mode === "dark" ? "#fff" : "#000",
+            },
+          }),
+        },
+      }}
+    />
+  </LocalizationProvider>
+</FormControl>
 
 
 <FormControl  sx={{ mr: 2, width: { xs: "100%", md: "auto" , color:'#fff' } }}>
